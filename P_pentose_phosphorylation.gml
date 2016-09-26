@@ -7,9 +7,9 @@ rule [
     context[
 
 	#ATP context
-	 node [id 5 label "O"]
+	node [id 5 label "O"]
         node [id 2 label "P"]
-	 node [id 1 label "O"]
+	node [id 1 label "O"]
         node [id 3 label "O"]
         node [id 4 label "O"]
         node [id 6 label "P"]

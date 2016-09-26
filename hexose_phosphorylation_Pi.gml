@@ -1,19 +1,23 @@
 rule [
-    ruleID "hexose-phosphorylation"
+    ruleID "hexose_phosphorylation_Pi"
     left [
-               
+ #          edge [ source 13 target 14 label "-"]
+	     edge [ source 4 target 6 label "-"]   
             ]
 
     context[
 
 	#Pi context
-	node [id 1 label "O"]
-	node [id 2 label "P"]
-        node [id 3 label "O"]
+	node [id 1 label "P"]
+	node [id 2 label "O"]
+     	node [id 3 label "O"]
         node [id 4 label "O"]
-	
+	node [id 5 label "O"]
+	node [id 6 label "H"]
+	node [id 7 label "H"]
+	node [id 8 label "H"]
        
-	#Glc context
+	#Hex context
         node [id 13 label "O"]
 	node [id 14 label "C"]
 	node [id 15 label "C"]
@@ -23,14 +27,16 @@ rule [
 	node [id 19 label "C"]
 	node [id 20 label "C"]
 
-	#ATP edge context
-        edge [ source 1 target 2 label "-"]
-        edge [ source 2 target 4 label "="]
-        edge [ source 2 target 3 label "-"]
-       
+	#Pi context
+        edge [ source 1 target 2 label "-"]         
+	edge [ source 1 target 3 label "-"]
+        edge [ source 1 target 4 label "-"]
+	edge [ source 1 target 5 label "="]
+	edge [ source 2 target 7 label "-"]
+	edge [ source 3 target 8 label "-"]
 
-	#Glc Edge context
-	edge [ source 13 target 14 label "-"]
+	#Hex Edge context
+	
 	edge [ source 14 target 15 label "-"]
 	edge [ source 15 target 16 label "-"]
 	edge [ source 16 target 17 label "-"]
@@ -39,20 +45,21 @@ rule [
 	edge [ source 19 target 20 label "-"]
 	edge [ source 20 target 15 label "-"]
 	
+	
 
     ]
 
     right [
 
-       edge [ source 13  target 2 label "-"]
-        
+#       edge [ source 4 target 13 label "-"]   
+   #     edge [ source 2 target 7 label "-"]
     ]
-    constrainAdj [
-    id 13 count 2 op "="
-    edgeLabels[ label "-"]
-    ]
-    constrainAdj[
-    id 2 count 2 op "="
-    edgeLabels [label "-"]
-    ]   
+#    constrainAdj [
+#    id 2 count 1 op "="
+#    edgeLabels[ label "-"]
+#    ]
+#    constrainAdj[
+#    id 4 count 1 op "="
+#    edgeLabels [label "-"]
+#    ]   
 ]

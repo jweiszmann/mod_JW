@@ -1,8 +1,7 @@
 rule [
     ruleID "hexose-phosphotransferase"
     left [
-        node [id 5 label "O"]
-        node [id 2 label "P"]
+
 
 	
         edge [ source 2 target 5 label "-"]
@@ -11,6 +10,8 @@ rule [
     context[
 
 	#ATP context
+	node [id 5 label "O"]
+        node [id 2 label "P"]
 	node [id 1 label "O"]
         node [id 3 label "O"]
         node [id 4 label "O"]
@@ -57,9 +58,13 @@ rule [
     ]
 
     right [
-        node [id 5 label "O+"]
-        node [id 2 label "P"]
+   
        edge [ source 13  target 2 label "-"]
         
     ]
+    constrainAdj [
+    id 13 count 2 op "="
+    edgeLabels[ label "-"]
+    ]
+    
 ]

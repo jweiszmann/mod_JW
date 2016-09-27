@@ -38,14 +38,14 @@ rule [
 	edge [ source 2 target 6 label "-"]
 	edge [ source 3 target 7 label "-"]
 
-	#Glc Edge context
+	#pentose Edge context
 	edge [ source 9 target 10 label "-"]
 	edge [ source 10 target 11 label "-"]
 	edge [ source 11 target 12 label "-"]
 	edge [ source 12 target 13 label "-"]
 	edge [ source 13 target 9 label "-"]
 	edge [ source 10 target 14 label "-"]
-	edge [ source 14 target 15 label "-"]
+	
 	edge [ source 15 target 16 label "-"]
 
 	

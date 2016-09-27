@@ -17,6 +17,6 @@ ruleGML('phosphate_cleave.gml')
 #ruleGML('Pi_phostest.gml')
 ruleGML('hexose_phosphorylation_Pi_II.gml')
 ruleGML('hexoseP_pentoseP_Isomerisation.gml')
-ruleGML('P_pentose_phosphorylation.gml')
-#ruleGML('DP_pentose-cleavage.gml')
+ruleGML('P_pentose_phosphorylation_Pi.gml')
+ruleGML('DP_pentose-cleavage.gml')
 

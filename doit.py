@@ -1,4 +1,4 @@
-strat = (addSubset(inputGraphs) >> repeat[6](inputRules))
+strat = (addSubset(inputGraphs) >> repeat[7](inputRules))
 dg = dgRuleComp(inputGraphs, strat)
 dg.calc()
 dg.print()
@@ -9,11 +9,11 @@ for m in inputGraphs:
 
 postSection("Rule")
 for r in inputRules:
-    r.print
+    r.print()
 
 postSection("Product Molecules")
 for m in dg.products:
-    m.print
+    m.print()
     if m.isMolecule:
         print(m.smiles)
 

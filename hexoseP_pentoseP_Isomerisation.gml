@@ -2,6 +2,7 @@ rule [
     ruleID "hexoseP-pentoseP_isomerisation"
     left [
     edge [ source 5 target 6 label "-"]
+    edge [ source 7 target 10 label "-"]
     ]
 
     context[
@@ -14,6 +15,7 @@ rule [
         node [id 7 label "C"]
         node [id 8 label "C"]
         node [id 9 label "C"]
+	node [id 10 label "H"]
 
 	edge [ source 1 target 2 label "-"]	
 	edge [ source 2 target 3 label "-"]
@@ -28,5 +30,6 @@ rule [
 
     right [	
     edge [ source 5 target 7 label "-"]
+    edge [ source 6 target 10 label "-"]
     ]
 ]

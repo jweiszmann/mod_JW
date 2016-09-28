@@ -20,7 +20,7 @@ rule [
         node [id 9 label "O"]
         node [id 10 label "P"]
         node [id 11 label "O"]
-        node [id 12 label "C"]
+       
 	
 	#H20
 	node [id 13 label "O"]
@@ -37,7 +37,7 @@ rule [
         edge [ source 6 target 9 label "-"]
         edge [ source 9 target 10 label "-"]
         edge [ source 10 target 11 label "-"]
-	edge [ source 11 target 12 label "-"]
+	
         
 	#H2O Edge context
 	edge [ source 13 target 14 label "-"]

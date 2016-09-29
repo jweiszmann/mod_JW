@@ -21,4 +21,6 @@ ruleGML('P_pentose_phosphorylation_Pi.gml')
 ruleGML('DP_pentose-cleavage.gml')
 ruleGML('G3P-DH.gml')
 ruleGML('PG-kinase.gml')
-
+ruleGML('PG-mutase.gml')
+ruleGML('Enolase.gml')
+ruleGML('pyruvat_kinase.gml')

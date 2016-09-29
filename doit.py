@@ -1,4 +1,4 @@
-strat = (addSubset(inputGraphs) >> repeat[7](inputRules))
+strat = (addSubset(inputGraphs) >> repeat[10](inputRules))
 dg = dgRuleComp(inputGraphs, strat)
 dg.calc()
 dg.print()

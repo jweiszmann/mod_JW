@@ -78,7 +78,7 @@ rule [
 	edge [ source 16 target 23 label "-"]
   	  ]
     constrainAdj[
-    id 6 count 1 op "="
+    id 6 count 1 op =
     edgeLabels [label "="]
     
     ]
